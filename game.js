@@ -259,7 +259,7 @@ window.onload = function () {
     }
     // when the player winw the game
     if (won) {
-      winningMessage.text = "Прекрасно!";
+      winningMessage.text = "До наступного рівня!";
 
     }
 
