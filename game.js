@@ -126,7 +126,7 @@ function itemHandler(player, item) {
   }else if (item.key === 'letter-blue') {
      currentScore = currentScore + 10;
   }else if (item.key === 'letter-red') {
-     alert("Червоний лист!");
+     alert("Шкідливий вплив недостовірної інформації");
      window.location.reload(true);
   }else if (item.key === 'letter2') {
     currentScore = currentScore + 10;
@@ -259,7 +259,7 @@ window.onload = function () {
     }
     // when the player winw the game
     if (won) {
-      winningMessage.text = "GREAT WORK!";
+      winningMessage.text = "Прекрасно!";
 
     }
 
