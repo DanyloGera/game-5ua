@@ -118,6 +118,16 @@ function createBadge() {
 //   createItem(571, 530, 'star');
 // }
 
+//check score
+function Check() {
+  if (currentScore === winningScore) {
+addLastItems();
+  } else {
+alert("Ви зібрали не всі  листи!");
+window.location.reload(true);
+  }
+}
+
 // when the player collects an item on the screen
 function itemHandler(player, item) {
   item.kill();
@@ -136,7 +146,7 @@ function itemHandler(player, item) {
      ThirdHallItems();
   }else if (item.key === 'letter4') {
     currentScore = currentScore + 10;
-     addLastItems();
+     Check();
   }
   if (currentScore === winningScore) {
     game.add.sprite(375, 495, 'gamemachine');
