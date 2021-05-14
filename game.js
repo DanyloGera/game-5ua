@@ -112,11 +112,7 @@ function createBadge() {
   badge.animations.play('spin', 10, true);
 }
 
-//create star
-// function addStar() {
-//   items = game.add.physicsGroup();
-//   createItem(571, 530, 'star');
-// }
+
 
 //check score
 function Check() {
