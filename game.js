@@ -27,7 +27,7 @@ function SecondHallItems() {
   items = game.add.physicsGroup();
 // second hall items
   createItem(325, 134, 'letter-red');
-  createItem(435, 291, 'letter-red');
+  createItem(445, 291, 'letter-red');
   createItem(300, 233, 'letter-red');
   createItem(461, 174, 'letter-blue');
   createItem(366, 331, 'letter-blue');
@@ -119,7 +119,7 @@ function Check() {
   if (currentScore === winningScore) {
 addLastItems();
   } else {
-alert("Ви зібрали не всі  листи!");
+alert("You have not collected all the letters!");
 window.location.reload(true);
   }
 }
@@ -131,7 +131,7 @@ function itemHandler(player, item) {
      currentScore = currentScore + 10;
   }else if (item.key === 'letter-blue') {
      currentScore = currentScore + 10;
-  }else if (item.key === 'letter-red') {
+  }else  if (item.key === 'letter-red') {
      alert("Шкідливий вплив недостовірної інформації");
      window.location.reload(true);
   }else if (item.key === 'letter2') {
@@ -190,12 +190,12 @@ window.onload = function () {
     game.load.spritesheet('player', 'chalkers.png',  48, 62 );
 
 
-    game.load.spritesheet('letter1', 'blue.png', 36, 44);
-    game.load.spritesheet('letter2', 'blue.png', 36, 44);
-    game.load.spritesheet('letter3', 'blue.png', 36, 44);
-    game.load.spritesheet('letter4', 'blue.png', 36, 44);
-    game.load.spritesheet('letter-blue', 'blue.png', 36, 44);
-    game.load.spritesheet('letter-red', 'red.png', 36, 44);
+    game.load.spritesheet('letter1', 'cookie.png', 36, 44);
+    game.load.spritesheet('letter2', 'cookie.png', 36, 44);
+    game.load.spritesheet('letter3', 'cookie.png', 36, 44);
+    game.load.spritesheet('letter4', 'cookie.png', 36, 44);
+    game.load.spritesheet('letter-blue', 'cookie.png', 36, 44);
+    game.load.spritesheet('letter-red', 'chips.png', 36, 44);
 
 
     game.load.spritesheet('badge', 'badge.png', 42, 54);
